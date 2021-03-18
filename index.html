@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Speed Dry Eye test</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="title">
+        <img src="icon.png" alt="logo">
+        <h1 id= "boob">Frequency of Your Symptoms</h1>
+    </div>
+    <div id ="results">
+        <table>
+            <tr>
+              <th>Frequency</th>
+              <th>Answer</th>
+            </tr>
+            <tr>
+              <td>Dryness, Grittiness or Scratchiness: </td>
+              <td id="t1"> 0 </td>
+            </tr>
+            <tr>
+                <td>Soreness or Irritation: </td>
+                <td id="t2"> 0 </td>
+            </tr>
+            <tr>
+                <td>Burning or Watering: </td>
+                <td id="t3"> 0 </td>
+            </tr>
+            <tr>
+                <td>Eye Fatigue: </td>
+                <td id="t4"> 0 </td>
+            </tr>
+          </table>
+
+          <table>
+            <tr>
+              <th>Severity</th>
+              <th>Answer</th>
+            </tr>
+            <tr>
+              <td>Dryness, Grittiness or Scratchiness: </td>
+              <td id="t5"> 0 </td>
+            </tr>
+            <tr>
+                <td>Soreness or Irritation: </td>
+                <td id="t6"> 0 </td>
+            </tr>
+            <tr>
+                <td>Burning or Watering: </td>
+                <td id="t7"> 0 </td>
+            </tr>
+            <tr>
+                <td>Eye Fatigue: </td>
+                <td id="t8"> 0 </td>
+            </tr>
+          </table>
+          <div class="sumTotal">
+            <h3 id="test">Total: <span id="total">NULL</span></h3>
+            <button onClick="window.location.href=window.location.href">Refresh Page</button>
+          </div>  
+    </div>
+    <div class="section">
+        <h2 class="question" id= "question">How often are you experiencing Dryness, Grittiness or Scratchiness?</h2>
+        <div class="btn-group">
+            <input id= "a1" onclick="pickFunction(0); stepFunction();" type="image" src="0 - never.png">
+            <input id= "a2" onclick="pickFunction(1); stepFunction();" type="image" src="1- sometimes.png">
+            <input id= "a3" onclick="pickFunction(2); stepFunction();" type="image" src="2 - often.png">
+            <input id= "a4" onclick="pickFunction(3); stepFunction();" type="image" src="3 - constant.png">
+            <input id= "a5" onclick="pickFunction(4); stepFunction();" type="image" src="pic/4 - intolerable.png">
+        </div>
+    </div>
+    <button id ="reset" onClick="window.location.reload();">Refresh Page</button>
+    <script>
+        document.getElementById("a5").style.display = "none";
+        document.getElementById("reset").style.visibility = "hidden";
+        document.getElementById("results").style.display = "none";
+    </script>
+</body>
+</html>
