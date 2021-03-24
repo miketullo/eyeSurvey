@@ -9,8 +9,8 @@ function pickFunction(num) {
 }
 
 function stepFunction() {
-    step +=1;
-    console.log("step " + step);  
+    console.log("step " + step);
+    step +=1;  
     if (step == 1){
         document.getElementById("question").innerHTML = "How often are you experiencing Soreness or Irritation?";
     }
@@ -63,5 +63,7 @@ function stepFunction() {
         console.log(sum);
         
         document.getElementById("total").innerHTML = sum;
+    
+    
     }
 }
