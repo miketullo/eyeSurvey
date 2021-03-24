@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Speed Dry Eye Survey</title>
     <script src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="title">
@@ -75,7 +77,8 @@
             <button onClick="window.location.href=window.location.href">Retake Survey</button>
           </div>  
     </div>
-    <button id ="reset" onClick="window.location.href='index.html'">Retake Survey</button>
+    <a href='/index.html'><button id ="reset">Retake Survey</button></a>
+
     <script>
         document.getElementById("a5").style.display = "none";
         document.getElementById("reset").style.visibility = "hidden";
